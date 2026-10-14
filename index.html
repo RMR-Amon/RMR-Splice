@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @layer components {
+        .text {
+          @apply text-[#A6A8AD] font-normal;
+        }
+        .container{
+          @apply w-full max-w-[1440px] px-[15px] mx-auto
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-[#121214]">
+    <nav class="py-4.5">
+      <div class="container">
+        <div class="flex justify-between items-center">
+          <ul class="flex gap-5">
+            <li>
+              <a class="text" href="/"><img src="./logo.svg" alt="" /></a>
+            </li>
+            <li><a class="text" href="/">Sounds</a></li>
+            <li><a class="text" href="/">Skill</a></li>
+            <li><a class="text" href="/">Plugins</a></li>
+            <li><a class="text" href="/">Studio</a></li>
+            <li><a class="text" href="/">Community</a></li>
+            <li><a class="text" href="/">Blog</a></li>
+            <li><a class="text" href="/">Pricing</a></li>
+          </ul>
+          <button class="bg-white px-2 py-5.1 rounded-2xl">Sign up</button>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="bg-[url('./intro_img.png')] h-[744px] bg-cover bg-no-repeat bg-center">
+      <div class="container">
+        <div class="flex items-start justify-center flex-col h-[744px] gap-[30px]">
+          <h1 class="text-[72px] w-[513px] text-white font-bold">Step into the producer’s producer’s</h1>
+          <p class=" text-[20px] text-white w-[412px]">Explore the world’s best sample library and an unmatched marketplace of plugins and DAWs.</p>
+          <button class="text-white bg-[#0033FF] py-4 px-8 rounded-[8px]">Try free</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
